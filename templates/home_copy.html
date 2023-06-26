@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webpage Example</title>
+  <style>
+    .container {
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container"></div>
+  <div class="container"></div>
+  <div class="container"></div>
+
+  <input type="file" id="uploadBtn">
+  <button id="submitBtn">Submit</button>
+
+  <script>
+    document.getElementById('uploadBtn').addEventListener('change', function(event) {
+      // Handle file upload here
+      var files = event.target.files;
+      console.log(files); // Example: log the uploaded files to the console
+    });
+
+    document.getElementById('submitBtn').addEventListener('click', function() {
+      // Handle submit button click here
+      alert('Submit button clicked!');
+    });
+  </script>
+</body>
+</html>
